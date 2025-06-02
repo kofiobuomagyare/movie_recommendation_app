@@ -50,7 +50,7 @@ class MovieImageButton extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       foreground: Paint()
                         ..style = PaintingStyle.stroke
-                        ..strokeWidth = 3
+                        ..strokeWidth = 1
                         ..color = AppColors.blueAccent,
                     ),
                   ),
