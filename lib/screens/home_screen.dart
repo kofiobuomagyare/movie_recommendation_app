@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.zero,
                 tooltip: 'Settings',
                 onPressed: () {
-                  // Handle settings action
+                 
                 },
               ),
             ),
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Padding(
           padding: EdgeInsets.only(left: 24.0),
           child: SizedBox(
-            height: 250, // ✅ Set fixed height for the horizontal ListView
+            height: 250, 
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: imagePaths.length,
