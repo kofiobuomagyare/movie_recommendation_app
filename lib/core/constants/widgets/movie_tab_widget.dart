@@ -25,7 +25,14 @@ class MovieTabWidget extends StatelessWidget {
               ),
               child: TabBar(
                 isScrollable: true,
-                indicatorColor: Theme.of(context).colorScheme.primary,
+                dividerColor:Theme.of(context).scaffoldBackgroundColor,
+                indicatorColor: Theme.of(context).colorScheme.onPrimary.withOpacity(0.2),
+                indicatorWeight: 5.0,
+                indicatorSize: TabBarIndicatorSize.label,
+                labelStyle: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
                 labelColor: Theme.of(context).colorScheme.onPrimary,
                 unselectedLabelColor:
                     Theme.of(context).colorScheme.onPrimary.withOpacity(0.4),
