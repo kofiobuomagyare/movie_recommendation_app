@@ -87,7 +87,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNav(currentIndex: 0),
+      
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+         Divider(height: 1, thickness: 1, color: Theme.of(context).colorScheme.primary),
+          BottomNav(currentIndex: 0)
+                  ],
+      ),
     );
   }
 }

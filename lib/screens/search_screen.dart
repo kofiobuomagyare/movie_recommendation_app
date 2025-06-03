@@ -45,7 +45,13 @@ class _SearchScreenState extends State<SearchScreen> {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: _buildSearchAppBar(context, isDarkMode),
       body: _buildBody(isDarkMode),
-      bottomNavigationBar: BottomNav(currentIndex: 1),
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+         Divider(height: 1, thickness: 1, color: Theme.of(context).colorScheme.primary),
+          BottomNav(currentIndex: 1)
+                  ],
+      ),
     );
   }
 

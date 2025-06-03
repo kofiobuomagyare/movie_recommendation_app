@@ -15,8 +15,12 @@ class _WatchListScreenState extends State<WatchListScreen> {
       body: SafeArea(
         child: Center(child: Text('Watch List Page')),
       ),
-      bottomNavigationBar: BottomNav(
-        currentIndex:2,
+       bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+         Divider(height: 1, thickness: 1, color: Theme.of(context).colorScheme.primary),
+          BottomNav(currentIndex: 2)
+                  ],
       ),
     );
   }
