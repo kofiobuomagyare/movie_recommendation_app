@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_recommendation_app/nav/bottom_nav.dart';
+import 'package:movie_recommendation_app/features/home/presentation/widgets/bottom_nav.dart';
 
 class WatchListScreen extends StatefulWidget {
   const WatchListScreen({super.key});

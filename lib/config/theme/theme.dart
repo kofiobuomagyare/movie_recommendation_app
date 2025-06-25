@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_recommendation_app/core/constants/colors.dart';
+import 'package:movie_recommendation_app/config/theme/colors.dart';
 
 class AppTheme{
   static final  ThemeData darkTheme = ThemeData(

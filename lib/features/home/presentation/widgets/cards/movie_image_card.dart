@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:movie_recommendation_app/core/constants/colors.dart';
+import 'package:movie_recommendation_app/config/theme/colors.dart';
 
-class MovieImageButton extends StatelessWidget {
+class MovieImageCard extends StatelessWidget {
   final String imagePath;
   final int number;
   final VoidCallback onTap;
 
-  const MovieImageButton({
+  const MovieImageCard({
     super.key,
     required this.imagePath,
     required this.number,
