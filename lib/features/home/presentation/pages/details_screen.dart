@@ -134,7 +134,7 @@ class DetailsScreen extends StatelessWidget {
                 // Movie details
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 20), // Adjust as needed
+                    padding: const EdgeInsets.only(top: 20), 
                     child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

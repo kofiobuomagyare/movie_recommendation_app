@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_recommendation_app/features/home/presentation/pages/home_screen.dart'; // Update this path to your actual home screen
+import 'package:movie_recommendation_app/features/home/presentation/pages/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

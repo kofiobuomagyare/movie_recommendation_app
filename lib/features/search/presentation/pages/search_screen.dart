@@ -113,7 +113,7 @@ class _SearchScreenState extends State<SearchScreen> {
           Expanded(
             child:
                 query.isEmpty
-                    ? const SizedBox() // Don't show anything initially
+                    ? const SizedBox() 
                     : _filteredMovies.isEmpty
                     ? Center(
                       child: Column(

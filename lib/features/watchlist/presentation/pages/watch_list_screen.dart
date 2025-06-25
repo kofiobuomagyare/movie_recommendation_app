@@ -71,7 +71,7 @@ class _WatchListScreenState extends State<WatchListScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/images/watchlist_error.png', // Use a more appropriate image if needed
+            'assets/images/watchlist_error.png',
             width: 76,
             height: 76,
             fit: BoxFit.contain,
