@@ -26,6 +26,7 @@ class DetailsScreen extends StatelessWidget {
               fontWeight: FontWeight.w500,
             ),
           ),
+          centerTitle: true,
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back_ios,
@@ -37,7 +38,7 @@ class DetailsScreen extends StatelessWidget {
           actions: [
             IconButton(
               icon: Icon(
-                Icons.bookmark_border,
+                Icons.bookmark_rounded,
                 color: Theme.of(context).colorScheme.onSurface,
                 size: 24,
               ),
