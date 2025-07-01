@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movie_recommendation_app/features/home/data/data_sources/dummy_movies.dart';
-import 'package:movie_recommendation_app/features/home/presentation/pages/details_screen.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/movie_image_list.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/movie_tab_widget.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/bottom_nav.dart';
-
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,12 +42,7 @@ class HomeScreen extends StatelessWidget {
               MovieImageList(
                 movies: dummyMovies,
                 onTap: (movie) {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => DetailsScreen(movie: movie),
-                    ),
-                  );
+                  context.push('/movie/${movie.id}');
                 },
               ),
               const SizedBox(height: 24),

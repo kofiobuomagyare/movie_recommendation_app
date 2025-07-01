@@ -7,14 +7,12 @@ class MovieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Movie Recommendation App',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-
-      routes: appRoutes,
-      initialRoute: '/',
+      routerConfig: appRouter, 
       debugShowCheckedModeBanner: false,
     );
   }

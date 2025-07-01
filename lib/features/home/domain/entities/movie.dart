@@ -1,4 +1,5 @@
 class Movie {
+  final String id;
   final String title;
   final String imagePath;
   final String coverImage;
@@ -11,6 +12,7 @@ class Movie {
   final List<CastMember> cast;
 
   Movie({
+    required this.id,
     required this.title,
     required this.imagePath,
     required this.coverImage,

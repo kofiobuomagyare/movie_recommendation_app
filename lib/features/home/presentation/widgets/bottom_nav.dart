@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class BottomNav extends StatelessWidget {
@@ -9,16 +10,17 @@ class BottomNav extends StatelessWidget {
   void _navigateTo(BuildContext context, int index) {
   switch (index){
     case 0:
-      Navigator.pushNamed(context, '/home');
+      context.push('/home');
+;
       break;
     case 1:
-      Navigator.pushNamed(context, '/search');
+      context.push( '/search');
       break;
     case 2:
-      Navigator.pushNamed(context, '/watchlist');
+     context.push( '/watchlist');
       break;
     default:
-      Navigator.pushNamed(context, '/home');
+     context.go( '/home');
       break;
   }
   }

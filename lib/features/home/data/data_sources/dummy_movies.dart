@@ -2,6 +2,7 @@ import 'package:movie_recommendation_app/features/home/domain/entities/movie.dar
 
 final dummyMovies = [
   Movie(
+    id: '1',
     title: 'Doctor Strange in the Multiverse of Madness',
     imagePath: 'assets/images/Movie.png',
      coverImage: 'assets/images/cover_image.png',
@@ -33,6 +34,7 @@ final dummyMovies = [
     ],
   ),
     Movie(
+      id:'2',
     title: 'Spiderman No Way Home',
     imagePath: 'assets/images/movie-2.png',
      coverImage: 'assets/images/cover_image.png',

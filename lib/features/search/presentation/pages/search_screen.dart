@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/bottom_nav.dart';
 import 'package:movie_recommendation_app/features/search/domain/entities/movie_entity.dart';
 import 'package:movie_recommendation_app/features/search/domain/usecases/search_movies_usecase.dart';
@@ -75,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
           color: Theme.of(context).colorScheme.onPrimary,
           size: 20,
         ),
-        onPressed: () => Navigator.pop(context),
+        onPressed: () => context.pop(),
       ),
       title: Text(
         'Search',
@@ -95,7 +96,7 @@ class _SearchScreenState extends State<SearchScreen> {
             color: Theme.of(context).colorScheme.onPrimary,
             size: 24,
           ),
-          onPressed: () => Navigator.pop(context),
+          onPressed: () => context.pop,
         ),
       ],
     );

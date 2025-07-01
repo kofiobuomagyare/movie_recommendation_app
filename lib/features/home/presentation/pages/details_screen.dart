@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movie_recommendation_app/features/home/domain/entities/movie.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/about_movie_tab.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/cast_tab.dart';
@@ -33,7 +34,8 @@ class DetailsScreen extends StatelessWidget {
               color: Theme.of(context).colorScheme.onSurface,
               size: 20,
             ),
-            onPressed: () => Navigator.of(context).pop(),
+           onPressed: () => context.pop(),
+
           ),
           actions: [
             IconButton(

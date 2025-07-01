@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movie_recommendation_app/features/home/presentation/widgets/bottom_nav.dart';
 import 'package:movie_recommendation_app/features/search/domain/entities/movie_entity.dart';
 
@@ -10,7 +11,7 @@ class WatchListScreen extends StatefulWidget {
 }
 
 class _WatchListScreenState extends State<WatchListScreen> {
-  List<MovieEntity> _watchList = []; 
+  final List<MovieEntity> _watchList = []; 
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
@@ -34,7 +35,7 @@ class _WatchListScreenState extends State<WatchListScreen> {
             color: Theme.of(context).colorScheme.onSurface,
             size: 20,
           ),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => context.pop(),
         ),
       ),
       body: SafeArea(
